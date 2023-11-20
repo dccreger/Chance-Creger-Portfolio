@@ -5,24 +5,23 @@
   font-size: 62.5%;
 }
 
-header {
+.header {
   display: flex;
   background-color: #8f9491;
   flex-direction: column;
   padding: 20px;
 }
 
-h1 {
+.h1 {
   font-size: 1000%;
   margin-top: 5px;
 }
 
-h2 {
+.h2 {
   font-size: 750%;
   margin-top: 5px;
 }
-
-nav {
+.h2-2 nav {
   background-color: #eadde1;
   font-size: 150%;
   line-height: 20px;
@@ -48,18 +47,19 @@ nav a:hover::after {
 
 .main-div {
   display: flex;
+  max-width: 100%;
 }
-
 .article {
   flex: 2 2;
   background-color: white;
   padding: 10px;
-  align-items: top;
+  justify-content: center;
+  text-align: left;
 }
 
 .aside {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   flex: 1 200px;
   background-color: white;
 }
@@ -78,12 +78,34 @@ nav a:hover::after {
   height: auto;
 }
 
+.main-div-2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.article-2 {
+  display: flex;
+  background-color: white;
+  padding: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.aside-2 {
+  display: flex;
+  justify-content: flex-end;
+  background-color: white;
+  height: 400px;
+  align-items: center;
+}
+
 .circle-border-2 {
   border-radius: 50%;
   overflow: hidden;
   border: 2px solid black;
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
   margin: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   position: relative;
@@ -98,13 +120,12 @@ nav a:hover::after {
   border-radius: 50%;
   overflow: hidden;
   border: 2px solid black;
-  height: 200px;
-  width: 200px;
+  height: 175px;
+  width: 175px;
   margin: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   position: relative;
-  transform-origin: top left;
-  transform: scale(0.5);
+  transition: transform 0.3s ease;
 }
 .circle-border-scaled img {
   width: 100%;
@@ -112,12 +133,42 @@ nav a:hover::after {
   position: absolute;
   top: 5%;
 }
-
-#Additional-Projects {
+.circle-border-scaled-2 {
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid black;
+  height: 175px;
+  width: 175px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  transition: transform 0.3s ease;
+  background-color: white;
+}
+.circle-border-scaled-2 img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 5%;
 }
 
-#Contact-Me {
+footer {
+  display: flex;
+  background-color: #8f9491;
+  justify-content: center;
+  padding: 20px;
 }
 
-@media screen (max-width: 780px) {
+@media screen (max-width: 768px) {
+  .main-div-2 {
+    flex-direction: column;
+  }
+
+  .aside-2 {
+    flex-direction: column;
+  }
+
+  .article-2 {
+    flex-direction: column;
+  }
 }
