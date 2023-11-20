@@ -51,15 +51,16 @@ nav a:hover::after {
 }
 
 .article {
-  flex: 2;
+  flex: 2 2;
   background-color: white;
   padding: 10px;
+  align-items: top;
 }
 
 .aside {
   display: flex;
-  justify-content: center;
-  flex: 1;
+  justify-content: flex-end;
+  flex: 1 200px;
   background-color: white;
 }
 
@@ -69,17 +70,47 @@ nav a:hover::after {
   border: 2px solid black;
   height: 200px;
   width: 200px;
-  margin: 5px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
 .circle-border img {
   width: 100%;
   height: auto;
 }
-#About-Me {
-}
 
-#Latest {
+.circle-border-2 {
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid black;
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.circle-border-2 img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: -10%;
+}
+.circle-border-scaled {
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid black;
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  transform-origin: top left;
+  transform: scale(0.5);
+}
+.circle-border-scaled img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 5%;
 }
 
 #Additional-Projects {
