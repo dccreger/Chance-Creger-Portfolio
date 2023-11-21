@@ -6,7 +6,6 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Screenshots](#screenshots)
@@ -22,11 +21,6 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 - HTML
 - CSS
-
-## Installation
-
-1. Clone the repository: `git clone https://github.com/your-username/your-portfolio.git`
-2. Navigate to the project directory: `cd your-portfolio`
 
 ## Usage
 
